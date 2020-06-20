@@ -1,8 +1,9 @@
 <template>
   <v-app>
-    <v-content>
-      <nav-bar/>
-    </v-content>
+      <v-main>
+        <nav-bar/>
+        <router-view></router-view>
+      </v-main>
     <Footer/>
   </v-app>
 </template>
@@ -13,10 +14,9 @@ import Footer from './components/Footer'
 
 export default {
   name: 'App',
-
   components: {
     NavBar,
-    Footer
+    Footer,
   },
 };
 </script>
